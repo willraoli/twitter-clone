@@ -119,7 +119,6 @@ const Home: NextPage<HomeProps> = ({ tweets }) => {
                 <button
                   onClick={() => likeTweet({ id: tweet.id })}
                   className='group'
-                  disabled={text.length === 0}
                 >
                   <span className='mr-2 rounded-full p-1 group-hover:bg-rose-200'>
                     ❤️
