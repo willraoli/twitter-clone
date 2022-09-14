@@ -1,4 +1,3 @@
-import TweetPost from '../components/Tweet'
 import TweetForm from '../components/TweetForm'
 import { Tweet, User } from '@prisma/client'
 import type { NextPage } from 'next'
