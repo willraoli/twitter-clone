@@ -36,7 +36,7 @@ const Tweet = ({
         )}
         <div className='flex flex-col'>
           <a className='text-sm font-semibold'>@{author.name?.split(' ')[0]}</a>
-          <p className='text-sm'>{content}</p>
+          <p className='break-all text-sm'>{content}</p>
         </div>
       </div>
       <div className='flex justify-end'>
