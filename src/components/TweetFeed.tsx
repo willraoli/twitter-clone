@@ -13,6 +13,7 @@ const TweetFeed = ({ tweets, refetchFn }: TweetFeedProps) => {
         <TweetPost
           tweet={tweet}
           refetchFn={refetchFn}
+          key={tweet.id}
         />
       ))}
     </ul>
