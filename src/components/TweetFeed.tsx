@@ -12,7 +12,6 @@ const TweetFeed = ({ tweets, refetchFn }: TweetFeedProps) => {
       {tweets.map(tweet => (
         <TweetPost
           tweet={tweet}
-          author={tweet.author}
           refetchFn={refetchFn}
         />
       ))}
