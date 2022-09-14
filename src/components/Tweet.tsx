@@ -3,14 +3,12 @@ import { Tweet, User } from '@prisma/client'
 import Image from 'next/image'
 
 interface TweetProps {
-  tweet: Tweet
-  author: User
+  tweet: Tweet & { author: User }
   refetchFn: () => void
 }
 
 const Tweet = ({
-  tweet: { id, content, likes },
-  author,
+  tweet: { id, content, likes, author },
   refetchFn,
 }: TweetProps) => {
   const { mutate: likeTweet } = trpc.useMutation(['tweet.like'], {
