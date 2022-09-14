@@ -38,6 +38,7 @@ const TweetForm = ({ refetchFn }: TweetFormProps) => {
             src={session?.user?.image ?? '#'}
             width='48px'
             height='48px'
+            alt='User photo'
             className='rounded-full'
           />
         )}

@@ -30,6 +30,7 @@ const Tweet = ({
               width='48px'
               layout='fixed'
               className='rounded-full'
+              alt='User photo'
             />
           </div>
         )}
