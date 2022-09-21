@@ -2,13 +2,14 @@
 import { httpBatchLink } from '@trpc/client/links/httpBatchLink'
 import { loggerLink } from '@trpc/client/links/loggerLink'
 import { withTRPC } from '@trpc/next'
+import { Session } from 'next-auth'
 import { SessionProvider } from 'next-auth/react'
+import { AppType } from 'next/app'
 import superjson from 'superjson'
 import type { AppRouter } from '../server/router'
 import '../styles/globals.css'
-import { CustomAppType } from 'next/app'
 
-const MyApp: CustomAppType = ({
+const MyApp: AppType<{ session: Session }> = ({
   Component,
   pageProps: { session, ...pageProps },
 }) => {
